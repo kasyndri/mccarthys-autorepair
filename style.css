@@ -1,0 +1,309 @@
+body {
+  background-color: #2d3436;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url("images/graphics/car.jpg");
+  /*background-blend-mode: exclusion;*/
+  color: black;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  display: inline;
+  justify-content: center;
+  font-size: 48px;
+  text-shadow: 0 0 2px white, 0 0 10px gray;
+  text-decoration-line: underline;
+  text-decoration-style:
+}
+
+header {
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+    "phone email address";
+  background-color: black;
+  padding: 5px;
+  font-size: 16px;
+  color: white;
+}
+.header-buttons {
+  transition: .2s;
+  outline: none;
+  border: 1px solid black;
+}
+.header-buttons:hover {
+  border: 1px solid red;
+  border-radius: 5px;
+  cursor: copy;
+}
+.header-buttons:active {
+  transition: .05s;
+  border: 1px solid green;
+}
+#phone {
+  grid-area: phone;
+}
+#email {
+  grid-area: email;
+}
+#address {
+  grid-area: address;
+}
+/*#address:hover {
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}*/
+#title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hornsimg {
+  display: inline;
+}
+.oem-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+.oem-banner img {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+div.mobile-banner {
+  display: none;
+}
+#home {
+  grid-area: home;
+}
+#work {
+  grid-area: work;
+}
+#about {
+  grid-area: about;
+}
+#discounts {
+  grid-area: discounts;
+}
+#navbar {
+  display: grid;
+  grid-template-areas: "home work about discounts";
+}
+
+.nav-buttons {
+  border: 3px solid black;
+  border-radius: 20px;
+  background: none;
+  background-color: white;
+  color: black;
+  padding: 10px 15px 10px 15px;
+  transition: .2s;
+  margin: 10px 50px 10px 50px;
+  font-weight: 900;
+  outline: none;
+}
+.nav-buttons:hover {
+  border: 3px solid #d63031;
+  cursor: pointer;
+  padding: 10px 30px 10px 30px;
+}
+.nav-buttons:active {
+  transition: .05s;
+  border: 3px solid green;
+}
+.border {
+  margin: 10px 0 10px 0;
+  border: 1px solid white;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom: 5px solid black;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.info-container {
+  display: grid;
+  grid-template-areas:
+    ". . est"
+    "con . ."
+    ". info .";
+    grid-gap: 100px 200px;
+    padding: 100px;
+
+}
+#tip1 {
+  grid-area: est;
+}
+#tip2 {
+  grid-area: con;
+}
+#tip3 {
+  grid-area: info;
+}
+.info-bubble {
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255,0.9);
+  border-radius: 10px;
+
+}
+a.fa {
+  /*display: inline;
+  position: fixed;
+  bottom: 0%;*/
+  padding: 20px;
+  margin-bottom: 0px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+a.fa:hover {
+  opacity: 0.7;
+}
+a.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+a.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.address {
+  margin-top: 3px;
+}
+/*#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  border: 1px solid yellow;
+}*/
+
+@media screen and (min-width: 1920px) {
+  div.social-buttons {
+    position: fixed;
+    bottom: 0%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .info-container {
+      grid-gap: 60px;
+      padding: 60px;
+  }
+}
+@media screen and (max-width: 900px) {
+  body {
+    background-size: cover;
+  }
+  header {
+    grid-template-areas:
+      "phone email address"
+  }
+  .header-buttons {
+    margin: 1px;
+    padding: 0px;
+  }
+  .nav-buttons {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  #navbar {
+    display: grid;
+    grid-template-areas:
+      "home"
+      "work"
+      "about"
+      "discounts";
+  }
+  .full-banner img {
+    display: none;
+  }
+  div.mobile-banner {
+    display: flex;
+  }
+  .info-container {
+    grid-template-areas:
+      ". est est"
+      "con con ."
+      "info info info";
+      grid-gap: 150px;
+      padding: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-size: cover;
+  }
+  header {
+    grid-template-areas:
+      "phone"
+      "email"
+      "address";
+  }
+  .header-buttons {
+    margin: 1px;
+    padding: 0px;
+  }
+  .nav-buttons {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #navbar {
+    display: grid;
+    grid-template-areas:
+      "home"
+      "work"
+      "about"
+      "discounts";
+  }
+  .full-banner > img {
+    display: none;
+  }
+  .mobile-banner > img {
+    display: flex;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  .info-container {
+    grid-template-areas:
+      "est"
+      "con"
+      "info";
+      grid-gap: 50px;
+      padding: 40px;
+  }
+}

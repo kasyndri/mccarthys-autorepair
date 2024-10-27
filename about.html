@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>mcCARthy's Auto Repair</title>
+    <!--<link rel="icon" href="images/horns24px.png" type="image/x-icon"> wrong icon here-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <span id="phone" class="header-buttons">
+        <i class="fa">&#xf095;</i>
+        <span class="tooltip">(281)383-8038
+          <span class="tooltiptext">Click to copy to clipboard</span>
+        </span>
+      </span>
+      <span id="email" class="header-buttons">
+        <i style="font-size: 16px;" class="material-icons">email</i>
+        <span class="tooltip">mccarthys.auto.repair@gmail.com
+            <span class="tooltiptext">Click to copy to clipboard</span>
+        </span>
+      </span>
+      <span id="address" class="">
+        <i class="fa address">&#xf277;</i>
+        <span class="address">Houston, TX</span>
+      </span>
+    </header>
+
+    <div class="oem-banner full-banner" id="">
+      <img src="images/oem/benz.png" alt="">
+      <img src="images/oem/bmw.png" alt="">
+      <img src="images/oem/porsche.png" alt="">
+      <img src="images/oem/audi.png" alt="">
+      <img src="images/oem/vw.png" alt="">
+      <img src="images/oem/mini.png" alt="">
+      <img src="images/oem/honda.png" alt="">
+      <img src="images/oem/acura.png" alt="">
+      <img src="images/oem/toyota.png" alt="">
+      <img src="images/oem/lexus.png" alt="">
+      <img src="images/oem/ford.png" alt="">
+      <img src="images/oem/lincoln.png" alt="">
+      <img src="images/oem/mercury.png" alt="">
+      <img src="images/oem/gm.png" alt="">
+      <img src="images/oem/gmc.png" alt="">
+      <img src="images/oem/cadillac.png" alt="">
+      <img src="images/oem/chevy.png" alt="">
+      <img src="images/oem/chrysler.png" alt="">
+      <img src="images/oem/jeep.png" alt="">
+      <img src="images/oem/dodge.png" alt="">
+      <img src="images/oem/tesla.png" alt="">
+    </div>
+
+    <div class="border"></div>
+
+    <div class="" id="navbar">
+      <button type="button" name="button" class="nav-buttons" id="home" onclick="document.location.href='index.html'">HOME</button>
+      <button type="button" name="button" class="nav-buttons" id="work" onclick="document.location.href='work.html'">MY WORK</button>
+      <button type="button" name="button" class="nav-buttons" id="about" >ABOUT ME</button>
+      <button type="button" name="button" class="nav-buttons" id="discounts" onclick="document.location.href='discounts.html'">DISCOUNTS</button>
+    </div>
+
+    <div class="border"></div>
+
+    <div id="title">
+      <h1>About me</h1>
+    </div>
+
+
+    <div class="border"></div>
+
+    <div class="graphic-container">
+      <div class="graphic-text">
+        Graduated from Universal Technical Institute here in Houston.
+      </div>
+      <a href="images/graphics/slides/a1.jpg" target="_blank">
+        <img src="images/graphics/slides/a1.jpg" class='slides' alt="" style="">
+      </a>
+      <div class="graphic-text">
+        Student of the course award in:
+      </div>
+      <div class="small-graphic-text">
+        <ul>
+          <li>Undercar</li>
+          <li>Brakes</li>
+          <li>Power Trains</li>
+          <li>Electronic Fundamentals</li>
+          <li>Electronic Technology</li>
+          <li>Electronic Diagnostics</li>
+          <li>Advanced Diagnostics</li>
+          <li>Fuel & Ignition Systems</li>
+          <li>Power & Performance</li>
+          <li>Automatic Transmissions</li>
+          <li>Service Writing</li>
+        </ul>
+      </div>
+      <a href="images/graphics/slides/a2.jpg" target="_blank">
+        <img src="images/graphics/slides/a2.jpg" class='slides' alt="" style="">
+      </a>
+      <div class="graphic-text">
+        Director's Honors List & Perfect Attendance Award
+      </div>
+
+      <div class="bottom border"></div>
+      <div class="social-buttons">
+        <a href="https://www.facebook.com/kasyndri" class="fa fa-facebook" target="_blank"></a>
+        <a href="https://twitter.com/kasyndri" class="fa fa-twitter" target="_blank"></a>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  $("#email").click(function() {
+    var email = "synsautorepair@gmail.com";
+    var tempVar = $('<input>').val(email).appendTo('body').select();
+    document.execCommand('copy');
+    $(tempVar).remove();
+    $('.tooltiptext').html("Copied!");
+    setTimeout(() => {
+      $('.tooltiptext').html("Click to copy to clipboard");
+    }, 1200);
+  });
+
+  $("#phone").click(function() {
+    var phone = "+12813838038";
+    var tempVar = $('<input>').val(phone).appendTo('body').select();
+    document.execCommand("copy");
+    $(tempVar).remove();
+    $('.tooltiptext').html("Copied!");
+    setTimeout(() => {
+      $('.tooltiptext').html("Click to copy to clipboard");
+    }, 1200);
+  });
+</script>

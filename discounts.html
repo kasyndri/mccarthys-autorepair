@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>mcCARthy's Auto Repair</title>
+    <!--<link rel="icon" href="images/horns24px.png" type="image/x-icon"> wrong icon here-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="discounts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <span id="phone" class="header-buttons">
+        <i class="fa">&#xf095;</i>
+        <span class="tooltip">(281)383-8038
+          <span class="tooltiptext">Click to copy to clipboard</span>
+        </span>
+      </span>
+      <span id="email" class="header-buttons">
+        <i style="font-size: 16px;" class="material-icons">email</i>
+        <span class="tooltip">mccarthys.auto.repair@gmail.com
+            <span class="tooltiptext">Click to copy to clipboard</span>
+        </span>
+      </span>
+      <span id="address" class="">
+        <i class="fa address">&#xf277;</i>
+        <span class="address">Houston, TX</span>
+      </span>
+    </header>
+
+    <div class="oem-banner full-banner" id="">
+      <img src="images/oem/benz.png" alt="">
+      <img src="images/oem/bmw.png" alt="">
+      <img src="images/oem/porsche.png" alt="">
+      <img src="images/oem/audi.png" alt="">
+      <img src="images/oem/vw.png" alt="">
+      <img src="images/oem/mini.png" alt="">
+      <img src="images/oem/honda.png" alt="">
+      <img src="images/oem/acura.png" alt="">
+      <img src="images/oem/toyota.png" alt="">
+      <img src="images/oem/lexus.png" alt="">
+      <img src="images/oem/ford.png" alt="">
+      <img src="images/oem/lincoln.png" alt="">
+      <img src="images/oem/mercury.png" alt="">
+      <img src="images/oem/gm.png" alt="">
+      <img src="images/oem/gmc.png" alt="">
+      <img src="images/oem/cadillac.png" alt="">
+      <img src="images/oem/chevy.png" alt="">
+      <img src="images/oem/chrysler.png" alt="">
+      <img src="images/oem/jeep.png" alt="">
+      <img src="images/oem/dodge.png" alt="">
+      <img src="images/oem/tesla.png" alt="">
+    </div>
+
+    <div class="border"></div>
+
+    <div class="" id="navbar">
+      <button type="button" name="button" class="nav-buttons" id="home" onclick="document.location.href='index.html'">HOME</button>
+      <button type="button" name="button" class="nav-buttons" id="work" onclick="document.location.href='work.html'">MY WORK</button>
+      <button type="button" name="button" class="nav-buttons" id="about" onclick="document.location.href='about.html'">ABOUT ME</button>
+      <button type="button" name="button" class="nav-buttons" id="discounts">DISCOUNTS</button>
+    </div>
+
+    <div class="border"></div>
+
+    <div id="title">
+      <h1>Discounts</h1>
+    </div>
+
+
+    <div class="border"></div>
+    <div class="graphic-text" style="font-size: 14px; margin-top: 10px;">
+      All discounts may only be used once per car. You may use these more than once if you have <b>multiple cars.</b> No questions asked.
+    </div>
+    <div class="border"></div>
+
+    <div class="graphic-container">
+      <div class="graphic-text">
+        Looking to save some money?
+      </div>
+      <div class="small-graphic-text">
+        Before paying, simply show me this page or say "nice website" (I made it myself, hehe) and I'll give you 5% off of any repair/maintenance.
+      </div>
+      <div class="border"></div>
+      <div class="graphic-text">
+        Looking to save a little more?
+      </div>
+      <div class="small-graphic-text">
+        Refer a friend and you both get 10% off of any repair/maintenance. Before paying, just tell me the name of the person who referred you.
+      </div>
+      <div class="border"></div>
+
+      <a href="https://www.facebook.com/kasyndri" class="fa fa-facebook" target="_blank"></a>
+      <a href="https://twitter.com/kasyndri" class="fa fa-twitter" target="_blank"></a>
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  $("#email").click(function() {
+    var email = "synsautorepair@gmail.com";
+    var tempVar = $('<input>').val(email).appendTo('body').select();
+    document.execCommand('copy');
+    $(tempVar).remove();
+    $('.tooltiptext').html("Copied!");
+    setTimeout(() => {
+      $('.tooltiptext').html("Click to copy to clipboard");
+    }, 1200);
+  });
+
+  $("#phone").click(function() {
+    var phone = "+12813838038";
+    var tempVar = $('<input>').val(phone).appendTo('body').select();
+    document.execCommand("copy");
+    $(tempVar).remove();
+    $('.tooltiptext').html("Copied!");
+    setTimeout(() => {
+      $('.tooltiptext').html("Click to copy to clipboard");
+    }, 1200);
+  });
+</script>
