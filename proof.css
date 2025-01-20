@@ -1,0 +1,47 @@
+body {
+  background-image: url("");
+}
+a {
+  display: block;
+  max-width: 1000px;
+  max-height: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#title {
+  color: white;
+}
+h1 {
+  text-shadow: 0 0 2px black, 0 0 10px green;
+}
+.graphic-container {
+  margin-top: 30px;
+  /*margin-left: 10px;
+  margin-right: 10px;*/
+}
+.slides {
+  display: block;
+  max-width: 100%;
+  max-height: 750px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.graphic-text {
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  margin-top: 50px;
+}
+
+.small-graphic-text {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 50px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -92,7 +92,7 @@ div.mobile-banner {
 }
 #navbar {
   display: grid;
-  grid-template-areas: "home work about discounts";
+  grid-template-areas: "home work about discounts proof";
 }
 
 .nav-buttons {
@@ -245,7 +245,8 @@ a.fa-twitter {
       "home"
       "work"
       "about"
-      "discounts";
+      "discounts"
+      "proof";
   }
   .full-banner img {
     display: none;
@@ -287,7 +288,8 @@ a.fa-twitter {
       "home"
       "work"
       "about"
-      "discounts";
+      "discounts"
+      "proof";
   }
   .full-banner > img {
     display: none;
