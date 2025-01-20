@@ -1,13 +1,13 @@
 body {
   background-image: url("");
 }
-a {
+/*a {
   display: block;
   max-width: 1000px;
   max-height: 900px;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 #title {
   color: white;
 }
@@ -19,7 +19,7 @@ h1 {
   /*margin-left: 10px;
   margin-right: 10px;*/
 }
-.slides {
+/*.slides {
   display: block;
   max-width: 100%;
   max-height: 750px;
@@ -27,7 +27,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-}
+}*/
 
 .graphic-text {
   text-align: center;
